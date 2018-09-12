@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>SVG动画--路径</title>
+</head>
+<body>
+
+    <svg width="400" height="400">
+      <path d="M200 200 L180 380 M200 200 L220 380 M180 380 L220 380" style="stroke-width: 2px;stroke: blue;fill: white;"></path>
+      <path d="M130 110 C 120 140, 180 140, 170 110" stroke="black" fill="transparent"/>
+    </svg>
+
+    <svg>
+      <defs>
+        <filter id="f1" x="0" y="0">
+          <fegaussianblur in="SourceGraphic" stdDeviation="15"/>
+        </filter>
+      </defs>
+      <rect height="90" width="90" stroke="green" stroke-width="3" fill="yellow" filter="url(#f1)"/>
+    </svg>
+
+</body>
+</html>
