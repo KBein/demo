@@ -1,3 +1,10 @@
 function show() {
-  document.getElementById("demo").innerHTML="这是JS";
+
+
+  var a = 4;
+  var b = "kk";
+  var c = a+b;
+  document.getElementById("demo").innerHTML=c;
+
+  // return c;
 }
